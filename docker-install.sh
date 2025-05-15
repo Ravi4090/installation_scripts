@@ -50,3 +50,12 @@ sudo systemctl enable docker
 # Step 8: Confirm installation
 echo "Docker installation completed successfully!"
 docker --version
+
+# Step 9: Docker Compose
+echo "Docker Compose Install"
+curl -SL https://github.com/docker/compose/releases/download/v2.36.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# Step 10: Confirm installation
+echo "Docker Compose installation completed successfully!"
+docker-compose --version
